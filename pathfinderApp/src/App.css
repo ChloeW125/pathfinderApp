@@ -44,3 +44,22 @@
 .background {
   background-color: #bddbe8;
 }
+
+.page {
+  margin: 20px;
+  border: 1px black solid;
+  width: 335px;
+  height: 690px;
+}
+
+.mapbox {
+  width: 90%;
+  height: 40%;
+  background-color: #eeeeee;
+  align-self: center;
+}
+
+.headbox {
+  background-color: #00cc00;
+  color: #2c8769;
+}
