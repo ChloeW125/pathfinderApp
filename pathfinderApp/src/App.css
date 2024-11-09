@@ -52,14 +52,21 @@
   height: 690px;
 }
 
-.mapbox {
+.map {
   width: 90%;
   height: 40%;
-  background-color: #eeeeee;
   align-self: center;
 }
 
-.headbox {
+.head.box {
   background-color: #00cc00;
   color: #2c8769;
+}
+
+.homelink {
+  color: #2c8769;
+}
+
+.box {
+  background-color: #eeeeee;
 }
