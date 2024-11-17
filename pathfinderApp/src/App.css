@@ -50,11 +50,11 @@
   border: 1px black solid;
   width: 335px;
   height: 690px;
+  align-items: center;
 }
 
 .map {
   width: 90%;
-  height: 40%;
   align-self: center;
 }
 
@@ -69,4 +69,10 @@
 
 .box {
   background-color: #eeeeee;
+  align-self: center;
+}
+
+#mymap {
+  width: 300px;
+  height: 300px;
 }
