@@ -53,8 +53,11 @@
   align-items: center;
 }
 
+/*https://www.joshwcomeau.com/css/center-a-div/*/
 .map {
-  width: 90%;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   align-self: center;
 }
 
@@ -67,12 +70,44 @@
   color: #2c8769;
 }
 
+
 .box {
   background-color: #eeeeee;
+  
   align-self: center;
 }
 
 #mymap {
   width: 300px;
   height: 300px;
+}
+
+canvas {
+  align-self: center;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: #cdebe8;
+  /*codeburst.io/how-to-position-html-elements-side-by-side-with-css-e1fae72ddcc*/
+  display: inline-block;
+}
+
+h3 {
+  display: inline-block;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.door {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+/*https://www.w3schools.com/cssref/sel_element_gt.php*/
+.doors > * {
+  display: inline-block;
+  vertical-align: middle;
 }
