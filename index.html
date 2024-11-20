@@ -1,13 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dijkstra's Algorithm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, button {
+      margin: 10px 0;
+    }
+    .result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dijkstra's Algorithm</h1>
+  <div>
+    <label for="startNode">Start Node:</label>
+    <input id="startNode" type="text" value="SLC 7-6" />
+  </div>
+  <div>
+    <label for="endNode">End Node:</label>
+    <input id="endNode" type="text" value="MC3 13-14" />
+  </div>
+  <button onclick="handleCalculate()">Calculate Shortest Path</button>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    // Graph Representation Based on the Table Data
+    const graph = {
+      "SLC 7-6": { "SLC 6-3": 24.23 },
+      "SLC 6-3": { "SLC 7-6": 24.23, "SLC 5-3": 47.11 },
+      "SLC 5-3": { "SLC 6-3": 47.11, "SLC 5-2": 48.47 },
+      "SLC 5-2": { "SLC 5-3": 48.47, "SLC 4-2": 50.14 },
+      "SLC 4-2": { "SLC 5-2": 50.14, "SLC 4-3": 44.45 },
+      "SLC 4-3": { "SLC 4-2": 44.45, "MC1 8-9": 60.41 },
+      "MC1 8-9": { "SLC 4-3": 60.41, "MC2 10-12": 54.96 },
+      "MC2 10-12": { "MC1 8-9": 54.96, "MC2 10-11": 57.58 },
+      "MC2 10-11": { "MC2 10-12": 57.58, "MC3 13-14": 37.85 },
+      "MC3 13-14": { "MC2 10-11": 37.85 },
+      "Across MC - QNC Bridge": { "Across MC - SLC Bridge": 52.96 },
+      "Across MC - SLC Bridge": {
+        "Across MC - QNC Bridge": 52.96,
+        "Across MC - C2 Tunnel": 34.02,
+      },
+      "Across MC - C2 Tunnel": { "Across MC - SLC Bridge": 34.02 },
+    };
+
+    // Dijkstra's Algorithm Implementation
+    function dijkstra(graph, startNode, endNode) {
+      if (!(startNode in graph) || !(endNode in graph)) {
+        return "Invalid start or end node";
+      }
+
+      const distances = {};
+      const visited = {};
+      const previous = {};
+      const priorityQueue = [];
+
+      // Initialize distances and previous nodes
+      for (const node in graph) {
+        distances[node] = Infinity;
+        visited[node] = false;
+        previous[node] = null;
+      }
+      distances[startNode] = 0;
+      priorityQueue.push(startNode);
+
+      while (priorityQueue.length > 0) {
+        // Sort priority queue based on distances
+        priorityQueue.sort((a, b) => distances[a] - distances[b]);
+        const currentNode = priorityQueue.shift();
+
+        if (currentNode === endNode) break;
+        if (visited[currentNode]) continue;
+
+        visited[currentNode] = true;
+
+        // Update distances to neighbors
+        for (const neighbor in graph[currentNode]) {
+          const newDist = distances[currentNode] + graph[currentNode][neighbor];
+          if (newDist < distances[neighbor]) {
+            distances[neighbor] = newDist;
+            previous[neighbor] = currentNode;
+            priorityQueue.push(neighbor);
+          }
+        }
+      }
+
+      // If the end node is unreachable
+      if (distances[endNode] === Infinity) return "No path available";
+
+      // Reconstruct the shortest path
+      const path = [];
+      let current = endNode;
+      while (current) {
+        path.unshift(current);
+        current = previous[current];
+      }
+
+      return { distance: distances[endNode], path };
+    }
+
+    // Handle Calculate Button
+    function handleCalculate() {
+      const startNode = document.getElementById("startNode").value;
+      const endNode = document.getElementById("endNode").value;
+      const result = dijkstra(graph, startNode, endNode);
+      const resultDiv = document.getElementById("result");
+
+      if (typeof result === "string") {
+        resultDiv.innerHTML = result;
+      } else {
+        resultDiv.innerHTML = `
+          <p>Distance: ${result.distance.toFixed(2)}</p>
+          <p>Path: ${result.path.join(" -> ")}</p>
+        `;
+      }
+    }
+  </script>
+
+</body>
 </html>
