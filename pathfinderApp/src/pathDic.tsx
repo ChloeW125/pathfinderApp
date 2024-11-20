@@ -2,7 +2,8 @@ const pathDic = {
     1: [[7, 24.03, "SLC1.png", ["SLC7 - O.jpg", "SLC7 - I.jpg"]], [20, 90.78, "EXPO.png", ["EXP20 - O.jpg"]]],
     2: [[3, 38.01, "SLC1.png", ["SLC3 - O.jpg", "SLC3 - I.jpg"]], [4, 50.14, "SLC1.png", ["SLC4 - O.jpg", "SLC4 - I.jpg"]], [5, 48.47, "SLC1.png", ["SLC5 - O.jpg", "SLC5 - I.jpg"]], [6, 38.31, "SLC1.png", ["SLC6 - O.jpg", "SLC6 - I.jpg"]], [16, 105.39, "QNC1.png", ["QNC16 - O.jpg", "QNC16 - I.jpg"]], [23, 48.03, "MC2.png", ["MC23 - O.jpg", "MC23 - I.jpg"]]],
     3: [[2, 38.01, "SLC1.png", ["SLC2 - O.jpg", "SLC2 - I.jpg"]], [4, 44.45, "SLC1.png", ["SLC4 - O.jpg", "SLC4 - I.jpg"]], [5, 47.11, "SLC1.png", ["SLC5 - O.jpg", "SLC5 - I.jpg"]], [6, 24.23, "SLC1.png", ["SLC6 - O.jpg", "SLC6 - I.jpg"]], [15, 37.72, "QNC1.png", ["QNC15 - O.jpg", "QNC15 - I.jpg"]], [16, 66.90, "QNC1.png", ["QNC16 - O.jpg", "QNC16 - I.jpg"]]],
-    4: [[2, 50.14, "SLC1.png", ["SLC2 - O.jpg", "SLC2 - I.jpg"]], [3, 44.45, "SLC1.png", ["SLC3 - O.jpg", "SLC3 - I.jpg"]]],
+    4: [[2
+        , 50.14, "SLC1.png", ["SLC2 - O.jpg", "SLC2 - I.jpg"]], [3, 44.45, "SLC1.png", ["SLC3 - O.jpg", "SLC3 - I.jpg"]]],
     5: [[2, 48.47, "SLC1.png", ["SLC2 - O.jpg", "SLC2 - I.jpg"]], [3, 47.11, "SLC1.png", ["SLC3 - O.jpg", "SLC3 - I.jpg"]]],
     6: [[2, 38.31, "SLC1.png", ["SLC2 - O.jpg", "SLC2 - I.jpg"]], [3, 24.23, "SLC1.png", ["SLC3 - O.jpg", "SLC3 - I.jpg"]], [7, 45.79, "SLC1.png", ["SLC7 - O.jpg", "SLC7 - I.jpg"]]],
     7: [[1, 24.03, "SLC1.png", ["SLC1 - O.jpg", "SLC1 - I.jpg"]], [7, 45.79, "SLC1.png", ["SLC7 - O.jpg", "SLC7 - I.jpg"]]],

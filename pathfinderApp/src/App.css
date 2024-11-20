@@ -74,7 +74,6 @@
 .box {
   background-color: #eeeeee;
   
-  align-self: center;
 }
 
 #mymap {
@@ -101,8 +100,8 @@ h3 {
 }
 
 .door {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 15px;
 }
 
@@ -110,4 +109,10 @@ h3 {
 .doors > * {
   display: inline-block;
   vertical-align: middle;
+}
+
+.step {
+  width: 318px;
+  margin-left: auto;
+  margin-right: auto;
 }
