@@ -8,7 +8,7 @@ A web application to help students efficiently and effectively navigate the Univ
 - Overview:
 The University of Waterloo campus can be challenging to navigate, especially for new students. With short class gaps and complex routes, existing navigation tools like Google Maps or Apple Maps often fall short in providing efficient and accurate directions. Pathfinder app aims to solve this problem by offering a dedicated campus navigation tool.
 - Key Features:
-Precise navigation instructions between buildings and classrooms.
+Precise navigation instructions between buildings.
 Utilization of the campus's unique tunnel and bridge systems.
 Specific pictures on each door and entry to make sure the user can find it.
 - Technologies:
