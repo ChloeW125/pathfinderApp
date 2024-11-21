@@ -1,0 +1,21 @@
+div {
+    background-image: url("help-page.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    margin: 0; /* Remove default margin */
+    height: 95vh; /* Full height of the viewport */
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    font-family: Arial, sans-serif;
+    
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  
+
+ 
+
+  }

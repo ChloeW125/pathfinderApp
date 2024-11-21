@@ -316,13 +316,13 @@ const MapCanvas = (adr: string) => {
 
 
 
-function DisplaySteps() {
+function DisplaySteps(nav) {
   const [current, setCurr] = useState(0)
     //https://www.shecodes.io/athena/10997-how-to-add-an-onclick-event-in-react
     //https://legacy.reactjs.org/docs/hooks-state.html
     return (
         <div className="background page">
-            {PageHead("Display Screen")}
+            {PageHead("Display Screen", nav)}
             <h2>{start} to {end}</h2>
             <div className="step box">
               <button onClick={() => setCurr(changeStep(steps, current, -1))} className='left'>Back</button>
@@ -341,11 +341,11 @@ function DisplaySteps() {
     )
   }
   
-  function PageHead(title: string) { 
+  function PageHead(title: string, nav) { 
     
     return (
         <div className="head box">
-          <a href='#title' className='homelink'><h2>Pathfinder App</h2></a>
+          <button onClick={() => nav("home")} className='homelink'><h2>Pathfinder App</h2></button>
           <h1>{title}</h1>
         </div>
     )
