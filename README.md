@@ -36,8 +36,8 @@ The Pathfinder App is a navigation tool designed to help students and visitors a
 
 ## 5. Credits
 
-**Chloe Wei**: data processing and overall help
-**Mary Tripodi**: displaying path to users
-**Vijeta Lalwani**: algorithm 
-**Grace Wang**: UI design for home page
-**Mary Wang**: UI design for search page
+**Chloe Wei**: data processing and overall help<br>
+**Mary Tripodi**: displaying path to users<br>
+**Vijeta Lalwani**: algorithm <br>
+**Grace Wang**: UI design for home page<br>
+**Mary Wang**: UI design for search page<br>
