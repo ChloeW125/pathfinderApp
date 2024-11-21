@@ -26,11 +26,11 @@
   <h2>Enter your start and end positions (See the numbering guide) to find the quickest route between buildings!</h2> 
   <div>
     <label for="startNode">Start Position:</label>
-    <input id="startNode" type="text" value="18 (M3)" />
+    <input id="startNode" type="text" value="M318" />
   </div>
   <div>
     <label for="endNode">End Position:</label>
-    <input id="endNode" type="text" value="16 (QNC)" />
+    <input id="endNode" type="text" value="QNC16" />
   </div>
   <button onclick="handleCalculate()">Calculate Shortest Path</button>
 
@@ -67,15 +67,15 @@
       7: {1: 24.03, 7: 45.79},
       8: {9: 100, 17: 32.33, 19: 91.91},
       9: {8: 100},
-      10: {11: 60.25, 12: 62.88, 18: 66.42},
-      11: {10: 60.25, 16: 35.23},
+      "MC10": {"MC11": 60.25, 12: 62.88, 18: 66.42},
+      "MC11": {10: 60.25, "QNC16": 35.23},
       12: {10: 62.88},
       13: {14: 37.34, 22: 52.96},
       14: {13: 37.34, 21: 35.38},
       15: {3: 37.2, 16: 63.95},
-      16: {2: 105.39, 3: 66.90, 11: 35.23, 15: 63.95},
+      "QNC16": {2: 105.39, 3: 66.90, 11: 35.23, 15: 63.95},
       17: {8: 32.33},
-      18: {10: 66.42, 19: 127.11, 20: 209.26},
+      "M318": {"MC10": 66.42, 19: 127.11, 20: 209.26},
       19: {8: 91.91, 18: 209.26},
       20: {1: 90.78, 18: 127.11},
       21: {14: 35.38},
