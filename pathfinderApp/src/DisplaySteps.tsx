@@ -387,9 +387,9 @@ function DisplaySteps() {
 
     return (
       <div className='doors'>
-        <img className="door" src={leave} width="100px" height="auto" alt={"leave from "+step[3][0]}/>
+        <img className="door" src={leave} width="100px" height="auto" alt={"Leave from "+step[3][0].substring(0, step[3][0].length-7)}/>
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Arrow-v2.png" width="50px" height="auto" alt="blue arrow"/>
-        <img className="door" src={arrive} width="100px" height="auto" alt={"arrive at "+step[3][1]}/>
+        <img className="door" src={arrive} width="100px" height="auto" alt={"Arrive at "+step[3][1].substring(0, step[3][1].length-7)}/>
       </div>
     )
   }
