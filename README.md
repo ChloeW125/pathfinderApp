@@ -41,3 +41,19 @@ The Pathfinder App is a navigation tool designed to help students and visitors a
 **Vijeta Lalwani**: algorithm <br>
 **Grace Wang**: UI design for home page<br>
 **Mary Wang**: UI design for search page<br>
+
+## 6. Sources
+Floor plan images from https://uwaterloo.ca/plant-operations/floor-plans
+Learned to use React from https://react.dev/reference/react
+Learned to use React on codecademy.com/learn
+Learned to use canvas on w3schools.com
+Also used khanacademy.com for basic coding education
+Arrow picture: https://upload.wikimedia.org/wikipedia/commons/8/82/Arrow-v2.png
+Other sources:
+https://www.shecodes.io/athena/38751-how-to-import-all-images-of-a-folder-into-a-react-component
+https://stackoverflow.com/questions/48560592/is-it-possible-to-import-a-group-of-images-as-an-array-create-react-app-projec
+https://www.reddit.com/r/typescript/comments/1b8z7lf/is_there_a_less_manual_way_of_loading_a_bunch_of/
+https://www.shecodes.io/athena/81408-what-does-undefined-mean-in-javascript
+https://www.w3schools.com/jsref/canvas_clearrect.asp
+https://www.w3schools.com/graphics/tryit.asp?filename=trycanvas_drawimage
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/src
