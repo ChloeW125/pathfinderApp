@@ -51,6 +51,7 @@ Also used khanacademy.com for basic coding education
 Arrow picture: https://upload.wikimedia.org/wikipedia/commons/8/82/Arrow-v2.png
 
 Other sources:
+
 https://www.shecodes.io/athena/38751-how-to-import-all-images-of-a-folder-into-a-react-component
 https://stackoverflow.com/questions/48560592/is-it-possible-to-import-a-group-of-images-as-an-array-create-react-app-projec
 https://www.reddit.com/r/typescript/comments/1b8z7lf/is_there_a_less_manual_way_of_loading_a_bunch_of/
